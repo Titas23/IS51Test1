@@ -33,3 +33,30 @@ result
         display option_2 is better
     
 """
+
+
+def option_1():
+    return 100 * 10 
+
+def option_2():
+    option_2_amount = 1
+    list_of_days = []
+    for i in range(0, 10):
+        list_of_days.append(option_2_amount)
+        option_2_amount *= 2
+    total = sum(list_of_days)
+    return total
+
+def result():
+    answer = ""
+    var_1 = option_1()
+    var_2 = option_2()
+    if var_1 == var_2: 
+        answer = "Option 1 and Option pay the same amount."
+    elif var_1 > var_2:
+        answer = "Option 1 pays more than option 2 thus it is better."
+    else:
+        answer = "Option 2 pays more than option 1 thus it pays better"
+    print(answer)
+
+result()
